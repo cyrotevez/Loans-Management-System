@@ -180,7 +180,7 @@ class ReportsWindow(tk.Tk):
         # Fetch new data based on current filter
         self.current_data = self._get_filtered_data(date_filter)
         lent, rec, debt, count, loans = self.current_data
-
+#loan timer
         # Re-build summary metric cards
         self._build_card(self.card_container, "TOTAL CASH GIVEN OUT", f"RWF {lent:,.0f}", 0)
         self._build_card(self.card_container, "TOTAL RECOVERY", f"RWF {rec:,.0f}", 1)
